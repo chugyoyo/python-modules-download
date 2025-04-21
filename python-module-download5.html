@@ -68,6 +68,7 @@
         <select id="platform">
             <option value="macosx_10_10_x86_64">macosx_10_10_x86_64</option>
             <option value="linux_x86_64">linux_x86_64</option>
+            <option value="win_x86_64">win_x86_64</option>
         </select>
     </div>
     <button class="confirm-button" onclick="downloadPackage()">下载</button>
@@ -85,7 +86,7 @@
         }
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/endpoint', {
+            const response = await fetch('http://www.pymd.top:5000/endpoint', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
